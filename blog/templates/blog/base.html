@@ -1,0 +1,94 @@
+{% load blog_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+   <title>{% block title %}{% endblock %}</title>
+   <link rel="stylesheet" href="{% static  'css/blog.css' %}">
+</head>
+<header>
+  <div class="first">
+    <div class="tap">
+      <strong><a href="#"><img width="100" heigh="200"src="https://cdn-icons-png.flaticon.com/512/60/60736.png"/</a></strong>
+    </div>
+    <ul class="child">
+      <li class="box"><a href="http://127.0.0.1:8000/blog/" class="class-1">Article</a></li>
+      <li class="box"><a href="#" class="class-2">Books</a></li>
+      <li class="box"><a href="#" class="class-3">workshop</a></li>
+      <li class="box"><a href="#" class="class-4">confrence</a></li>
+      <li class="box"><a href="#" class="class-5">membership</a></li>
+    </ul>
+    <div class="top"><button class="pig"><a href="http://127.0.0.1:8000/blog/search/" class="link">search</a></button></div>
+    <div class="topnav">
+     <!-- <input type="text" placeholder= "&#128269 Search article"> -->
+    </div>
+  </div>
+</header>
+<section class="second">
+  <div class="container">
+    <button class="box-1">premierleauge</button>
+    <button class="box-2">seria A</button>
+    <button class="box-3">laliga</button>
+    <button class="box-4">budesligs</button>
+    <button class="box-5">ligue 1</button>
+    <button class="box-6">champoinship</button>
+    <button class="box-7">wrestling</button>
+    <button class="box-8">kickboxing</button>
+    <button class="box-9">boxing</button>
+    <button class="box-10">UFC</button>
+    <button class="box-11">EFC</button>
+    <button class="box-12">olympic</button>
+    <button class="box-13">formular 1</button>
+  </div>
+</section>
+<body>
+  <div id="content">
+    <div class="doma">
+    {% block content %}
+    </div>
+    {% endblock %}
+    <div class="main">
+      <div class="child-1">
+        <a href="#" class="anchor">Realmadrid Champions</a>
+        <p class="role">Realmadrid the most highest in all the club that has won the champions leauge trophy even back to back, which has never been done by any club.</p>
+        <button class="button"><a href="#" class="time">Explore Accesible matches played</a></button>
+      </div>
+      <div class="child-2">
+        <a href="#" class="rem">Manchester United highest trophies</a>
+        <p class="ram">Manchester United is the highest in all football club in england when it comes to trophies won by the football clubs</p>
+        <button class="button-1"><a href="#" class="jet">Explore All Their matches played</a></button>
+      </div>
+      <div class="child-3">
+        <a href="#" class="gen">Arsenal football club emerge as the winner of premier leauge<a/>
+        <p class="fam">Arsenal football club is the only football club that had an invicible run during their campain in premier leauge.</p>
+        <button class="button-2"><a href="#" class="fom">Explore All their matches played.</a></button>
+      </div>
+    </div>
+  </div>
+  <div id="sidebar">
+  </div>
+  <footer>
+    <div class="last">
+      <h4>BROWSE ALL THE CHAMPIONS LEAUGE MANAGERS WITH TROPHY</h4>
+      <ul class="gogo">
+        💎<li><a href="#"class="vomp">carlo-Anceloti</a></li>
+        💎<li><a href="#"class="vomp">Bob paisley</a></li>
+        <li>💎<a href="#"class="vomp">zinedine zidane</a></li>
+        <li>💎<a href="#"class="vomp">jose villalonga</a></li>
+        <li>💎<a href="#"class="vomp">Luis Carniglia</a></li>
+        <li>💎<a href="#"class="vomp">Bela Guttmann</a></li>
+        <li>💎<a href="#"class="vomp">Helenio Herrera</a></li>
+        <li>💎<a href="#"class="vomp">migule munoz</a></li>
+        <li>💎<a href="#"class="vomp">Nereo Rocco</a></li>
+        <li>💎<a href="#"class="vomp">stefan kovacs</a></li>
+        <li>💎<a href="#"class="vomp">dettmar cramer</a></li>
+        <Ii>💎<a href="#"class="vomp">clough</a></li>
+        <li>💎<a href="#"class="vomp">Ernest happle</a></li>
+      </ul>
+      <P>With a commitment to quality content for the design community.
+        Founded by Vitaly Friedman and Sven Lennartz. 2006–2023.
+        Smashing is proudly running on Netlify.</P>
+    </div>
+  </footer>
+</body>
+</html>

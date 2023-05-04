@@ -1,0 +1,91 @@
+<!-- <div class="pagination">
+  <span class="step-links">
+      {% if page.has_previous %}
+      <a href="?page={{ page.previous_page_number }}">Previous</a>
+      {% endif %}
+      <span class="current">
+          Page {{ page.number }} of {{ page.paginator.num_pages }}.
+      </span>
+      {% if page.has_next %}
+      <a href="?page={{ page.next_page_number }}">Next</a>
+      {% endif %}
+  </span>
+</div> -->
+
+
+
+
+
+
+<div class="pagination">
+  <span class="step-links">
+      {% if page.has_previous %}
+      <span class="previous">
+      <a class="case" href="?page={{ page.previous_page_number }}">
+      <div class="king">
+       < 
+       </div>
+        </a>
+      </span>
+
+      {% endif %}
+      <span class="current">
+        <a href="http://127.0.0.1:8000/blog/?page=1">
+       <div class="case">
+        <div class="king">
+          {{1}} 
+        </div>
+       </div>
+       </a>
+      </span>
+      <span>
+      <a href="http://127.0.0.1:8000/blog/?page=2">
+        <div class="case">
+         <div class="king">
+          {{2}}
+          <!-- {{ page.paginator.num_pages }} -->
+         </div>
+        </div>
+      </a>
+     </span>
+     <span>
+      <a href="http://127.0.0.1:8000/blog/?page=2">
+        <div class="case">
+         <div class="king">
+          {{3}}
+          <!-- {{ page.paginator.num_pages }} -->
+         </div>
+        </div>
+      </a>
+     </span>
+     <span>
+      <a href="http://127.0.0.1:8000/blog/?page=2">
+        <div class="case">
+         <div class="king">
+          {{4}}
+          <!-- {{ page.paginator.num_pages }} -->
+         </div>
+        </div>
+      </a>
+     </span>
+     <span>
+      <a href="http://127.0.0.1:8000/blog/?page=2">
+        <div class="case">
+         <div class="king">
+          {{5}}
+          <!-- {{ page.paginator.num_pages }} -->
+         </div>
+        </div>
+      </a>
+     </span>
+    {% if page.has_next %}
+    <span class="next">
+      <a class="case" href="?page={{ page.next_page_number }}">
+      <div class="king">
+        >
+      </div>
+    </a>
+    </span>
+    {% endif %}
+  </span>
+</div>
